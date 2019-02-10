@@ -1,21 +1,37 @@
 ## Project title  Problem Set 2019 Programming and Scripting 
 
-## Project 1. Write a program that asks the user to input any positive integer and outputs the sum of all numbers between one and that number.
+## Project 1. Write a program that asks the user to input any positive integer and outputs the sum of all numbers between one 
+and that number.
 
 ## Motivation
-This project represents 50% of the marks due for Programming and Scripting Module 10 Credits.  Each problem therefore is worth 5% of the overall mark!
+
+This project represents 50% of the marks due for Programming and Scripting Module 10 Credits.  
+Each problem therefore is worth 5% of the overall mark!
+
 ## Code style
-The coding is written in Python, which according to DM's i-Tech Special | Coding for Beginners Volume 29 is "the greatest computer programming language ever created".  
+
+The coding is written in Python, which, according to DM's i-Tech Special | Coding for Beginners Volume 29 is
+"the greatest computer programming language ever created".  
+
 ##Background
-I began working on this Problem Set before I was familiar with version control software git.  It is the first program I have written and relied on somewhat analogue methods while I learned more about coding and the online resources that can assist.  
+
+I began working on this Problem Set before I was familiar with version control software git.  
+It is the first program I have written and relied on somewhat analogue methods while I learned more about coding 
+and the online resources that can assist.  
+
 ##Methodology
-Using a pen and paper, I tried to figure out a maths equation that would give me the sum of all numbers. This was to no avail so I started to google then came upon a formula by Gauss, a mathematician in the 18th Century.
+
+Using a pen and paper, I tried to figure out a maths equation that would give me the sum of all numbers. 
+This was to no avail so I started to google then came upon a formula by Gauss, a mathematician in the 18th Century.
 n = n * (n + 1) / 2 
 I wrote the code which would apply this formula to whatever positive integer was input.
 I inserted a while statement intended to reject a number that wasn't a positive integer.
-During testing, it became apparent that a request for a positive whole number would print on the screen, however the formula would still run on the number that was originally input.
+During testing, it became apparent that a request for a positive whole number would print on the screen, however the formula would 
+still run on the number that was originally input.
 I debugged the code by using the exit() command that simply closes the program if the condition of a positive integer is not met.
 A line of text instructs the user to run the program again which ensures the results will be based on a positive integer.
+
 ##Credits
+
 https://betterexplained.com/articles/techniques-for-adding-the-numbers-1-to-100/
 https://www.hashbangcode.com/article/stopping-code-execution-python
