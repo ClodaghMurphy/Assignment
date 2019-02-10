@@ -7,13 +7,20 @@
 
 i = int(input("Hello. Please input a positive whole number. "))
 
+# Tell the user it must be a positive integer if it is not one
+
 input
-if i <= 0:
+while i <= 0:
     print("I require a positive whole number. Please run the program again.")
-# is the answer to use the Gauss formula?
+
+# Use the exit() method to stop the program running. 
+# It is the most reliable, cross-platform way of stopping code execution
+
+    exit()
+
+
+# Use the Gauss technique to get the answer
 # n(n+1)/2
 
-x= int (i*(i+1))//2
+x= int (i*(i+1))/2
 print (x)
-
-      
