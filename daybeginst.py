@@ -3,6 +3,7 @@
 #Clodagh Murphy 2019 02 10
 
 #Use the import statement to gain access to datetime Python code from another module
+#The datetime module allows for manipulation of dates and times.
 import datetime
 
 #Assign the day of the week to x
