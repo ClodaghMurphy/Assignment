@@ -58,7 +58,7 @@ I modified the statement, ran the program and got the expected answer.
 
 
 
-##Credits
+## Credits
 https://betterexplained.com/articles/techniques-for-adding-the-numbers-1-to-100/
 https://www.hashbangcode.com/article/stopping-code-execution-python 
 
