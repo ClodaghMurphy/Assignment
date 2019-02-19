@@ -8,8 +8,10 @@
 #It generates arithmetic progressions.
 
 for i in range (1000, 1100):
+    
     if  (i % 12 == 0):
-    if  (i % 6 == 0):
+    
+#elif  (i % 6 == 0):
 
         print (i)
     
@@ -20,7 +22,7 @@ for i in range (1000, 1100):
 #continue
 #and and (i % 12 == 1 
 # #(i % 6 == 0)  
-# print (i, "is divisible by 6 but not 12")       
+# print (i, "are all the numbers that are divisible by 6 but not 12")       
 
 #print("Have a nice day!")
 

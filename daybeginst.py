@@ -14,7 +14,7 @@ x = (datetime.datetime.today().weekday())
 
 if x == 1: 
   print("Yes - today begins with a T.")  
-if x == 3: 
+elif x == 3: 
   print("Yes - today begins with a T.") 
 # "else" is an optional statement that executes 
 # when the conditional expression in the if statement above supplies a FALSE value
