@@ -1,4 +1,4 @@
-#collatz
+#4 collatz
 #Write a program that asks the user to input any positive integer 
 #and outputs the successive values of the following calculation. 
 #At each step calculate the next value bytakingthecurrentvalueand,
