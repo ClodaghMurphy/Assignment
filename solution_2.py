@@ -1,4 +1,4 @@
-#python daybeginst
+#python daybeginst solution 2
 #Write a program that outputs whether or not today is a day that begins with the letter T
 #Clodagh Murphy 2019 02 10
 
