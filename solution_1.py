@@ -21,6 +21,9 @@ while i <= 0:
 
 # Use the Gauss technique to get the answer
 # n(n+1)/2
+#When I tested the program the result was always displayed with as a floating number
+#In order to give a result of an integer with no decimal point
+#DO ANOTHER LINE OR AMEND THIS CODE!!
 
 x= int (i*(i+1))/2
 print (x)

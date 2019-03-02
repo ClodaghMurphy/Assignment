@@ -3,30 +3,22 @@
 # that are divisible by 6 but not 12 
 #Clodagh Murphy 2019 02 10
 
-#If iteration over a sequence of numbers is required, 
-#the built-in function range() comes in handy. 
-#It generates arithmetic progressions.
+#I used the built-in range() function that generates arithmetic progressions.
+#Remember not to include any punctuation such as a comma in the numbers over 1000
+#because Python won't recognise it.
+for i in range (1000, 10000):
 
-for i in range (1000, 1100):
-    
-    if  (i % 12 == 0):
-    
-#elif  (i % 6 == 0):
+#Use an if/and statement for i in the above mentioned range
+#when it can be divided by 6 with no remainder
+#and when being divided by 12 leaves a remainder
+#print the results
+    if  (i % 6 == 0) and (i % 12 != 0):
 
         print (i)
-    
+       
+# In order to test my result I started with a range (1000, 1100) and manually checked 
+# every output, once this proved correct I expanded the parameters 
 
-#while a < 1000:
-#print(a, end=',')
-
-#continue
-#and and (i % 12 == 1 
-# #(i % 6 == 0)  
-# print (i, "are all the numbers that are divisible by 6 but not 12")       
-
-#print("Have a nice day!")
-
-
-#comment to explain
-
-
+print ("are all the numbers between 1,000 and 10,000 that are divisible by 6 but not 12.")  
+ 
+print("Have a nice day!")

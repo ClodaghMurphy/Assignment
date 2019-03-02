@@ -25,6 +25,9 @@ print ("The square root of", i, "is approx. {:.2f}." .format (x))
 
 #In order to show an approximation of the result with just one number to the right
 #of the decimal point use .format () command
+#Use of .format adapted from examples in Chapter 5 Simple Functions
+#"The Coder’s Apprentice" by Peter Spronck
+
 
 
 
