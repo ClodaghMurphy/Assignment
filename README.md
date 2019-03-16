@@ -1,7 +1,6 @@
-## Project title  
+﻿## Project title  
 
-Problem Set 2019 Programming and Scripting 
-Due: last commit on or before March 31st
+Problem Set 2019 Programming and Scripting Due: last commit on or before March 31st 
 
 
 
@@ -72,11 +71,37 @@ Once this proved correct I expanded the parameters
 
 ## Question 4 Methodology
 Write a program that asks the user to input any positive integer and outputs the successive values of the following calculation. At each step calculate the next value by taking the current value and,if it is even,divide it by two,but if it is odd,multiply it by three and add one. Have the program end if the current value is one.
+The instructions provided above refer to the collatz conjecture, this is
+an unsolved mathematical problem at time of writing.
+No matter what number selected, the final result will always be one.
+This code can be used to test the theory and if you get a result other than one#I'd be happy to take a cut of the $500 reward ; P
+
+Firstly ask the user to input a positive integer i.e. a whole number.
+Tell the user it must be a positive integer if it is not one
+Use the exit() method to stop the program running. 
+It is the most reliable, cross-platform way of stopping code execution
+
+I have used the collatz function verbatim from user R2DPoop
+https://stackoverflow.com/questions/33324432/collatz-sequence-python-3
+!= means not equal to, therefore when i is equal to 1 the loop won't happen
+There is no need to write code for both conditions i%2==0 and i%2==1 
+If one is true, the other is automatically false
+Finally, call the function collatz (x)
+
+
+
 
 ## Question 5 Methodology
 
 Write a program that asks the user to input a positive integer and tells the user whether or not the number is a prime. 
 
+A prime number is greater than 1 and cannot be divided evenly by any other number except 1 and itself.
+Firstly ask the user to input a positive integer i.e. a whole number.
+Then exclude numbers less than or equal to 1 from being input at the outset because 1 is not prime and negative numbers cannot be.   Use the exit() method to stop the program running. 
+#Code adapted from https://www.programiz.com/python-programming/examples/prime-number
+Use if/else loop to check for factors of x by iteration.  The equation x % 1== 0 determines whether the number can be divided by any other number in the range between 2 and itself.
+Use break statement to terminate the loop once all the numbers in the range have been exhausted to tell the user that the number is a prime i.e., it could only be divided by itself.
+ 
 ## Question 6 Methodology
 
 Write a program that takes a user input string and outputs every second word
@@ -92,6 +117,24 @@ I used float() type casting to return the value between the parentheses as a flo
 I used the format() function to round down the decimals to one, it took a lot of experimenting with syntax in order to get the correct result.
 ## Question 8 Methodology
 Write a program that outputs today’s date and time in the format ”Monday,January 10th 2019 at 1:15pm”. 
+Use the following directives to indicate the particular format the date and time should take
+%A Weekday as locale’s full name
+%B Month as locale’s full name.
+%d Day of the month as a zero-padded decimal number.	
+%Y Year with century as a decimal number.
+%I:%M  Hour:Minute (12-hour clock) as a zero-padded decimal number.
+%p Locale’s equivalent of either AM or PM.
+print(datetime.datetime.now().strftime("%A, %B %d %Y at %I:%M %p"))
+Above code produces result in following format
+"Sunday, March 10 2019 at 09:29 AM"
+The solution requires English ordinal suffix for the day of the month i.e. 10th and this is not a functionality of python
+I adapted a piece of concise code that provides a suffix by user gsteff from stackoverflow website.
+https://stackoverflow.com/questions/5891555/display-the-date-like-may-5th-using-pythons-strftime/5891658#5891658
+It uses the time module which provides various time-related functions 
+so there is no requirement to import datetime module.  
+datetime.now() function uses GMT time by default.
+The localtime() function used instead of now()returns current local time.
+
 
 ## Question 9 Methodology
 Write a program that reads in a text ﬁle and outputs every second line. The program should take the ﬁlename from an argument on the command line.
@@ -112,3 +155,6 @@ https://docs.python.org/3/reference/
 https://docs.python.org/3/library/
 https://www.tutorialspoint.com/python/python_if_else.htm
 https://www.w3schools.com/python/python_conditions.asp
+https://www.thoughtco.com/how-to-determine-number-is-prime-2312518
+https://www.programiz.com/python-programming/examples/prime-number
+https://stackoverflow.com/questions/33324432/collatz-sequence-python-3
