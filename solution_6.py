@@ -25,6 +25,23 @@ s = 'pining for the fjords'
 t = s.split()
 print (t)
 
+fruitlist = ["apple", "banana", "cherry", "durian", "orange"]
+print( fruitlist ) 
+fruitlist[1:3] = [] 
+print( fruitlist )
+
+#You can delete elements from a list 
+#by assigning an empty list to a slice[].
 s = (input("Hello. Please input a short sentence of 10 words or less. "))
 t = s.split()
+t[0] = [] 
+t[2] = [] 
+t[4] = [] 
+t[6] = [] 
+t[8] = [] 
+
 print (t)
+#This code kinda works but returns IndexError: list assignment index out of range
+# if the input is less than the #number of elements in the code, if there isn't an eighth
+#element for example, needs to be more conditonal
+#Also the output is 'ugly'
