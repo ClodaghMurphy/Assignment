@@ -92,3 +92,8 @@ words = words.split()
 print (words[::2]) #this command outputs words 0,2,4 etc starting fom 0 not 1
 #not every second word as the human eye counts
 #but that is how the example provided for the problem appears so it must be grand
+# NEXT THING TO DO IS str.join
+#In [4]: print(*l, sep='\n')
+#gun
+#pizza
+#https://www.reddit.com/r/learnpython/comments/6b96j3/beginner_how_to_remove_square_bracket_and/
