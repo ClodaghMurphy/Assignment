@@ -104,7 +104,8 @@ Use break statement to terminate the loop once all the numbers in the range have
  
 ## Question 6 Methodology
 
-Write a program that takes a user input string and outputs every second word
+Write a program that takes a user input string and outputs every second word.
+
 
 ## Question 7 Methodology
 
@@ -139,6 +140,26 @@ The localtime() function used instead of now()returns current local time.
 ## Question 9 Methodology
 Write a program that reads in a text ﬁle and outputs every second line. The program should take the ﬁlename from an argument on the command line.
 
+From the python tutorial 
+https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
+i adapted this code  with open('honeybees.txt','r+') as f:
+It is good practice to use the with keyword when dealing with file objects.
+The first argument is a string containing the filename
+The second argument is another string containing a few characters describing the way in which the file will be used i.e., r+ opens the file for both reading and writing
+mylist = list(f)
+As advised by user Martijn Pieters, the file can be read as a list of lines by simply calling list() on the file object
+https://stackoverflow.com/questions/17569679/python-attributeerror-io-textiowrapper-object-has-no-attribute-split  
+I used the [::2] slice syntax to return items from the array going up in increments of two.
+The output is printed with new line characters \r\n, that is not how i want the text to appear.
+I tried using thecsv module, even though it is a text file, csv reader can remove delimiters and return file contents as a list of strings.
+The output is neat but I unable to code correctly output only every second line.
+import csv
+with open('honeybees.txt', newline='') as csvfile:
+    spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
+    for row in spamreader:
+            print(' '.join(row))
+I am submitting the code that returns untidy output as it more accurately answers the problem.
+
 ## Question 10 Methodology
 Write a program that displays a plot of the functions x, x2 and 2x in the range [0,4].
 
@@ -158,3 +179,5 @@ https://www.w3schools.com/python/python_conditions.asp
 https://www.thoughtco.com/how-to-determine-number-is-prime-2312518
 https://www.programiz.com/python-programming/examples/prime-number
 https://stackoverflow.com/questions/33324432/collatz-sequence-python-3
+https://stackoverflow.com/questions/17569679/python-attributeerror-io-textiowrapper-object-has-no-attribute-split
+https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
