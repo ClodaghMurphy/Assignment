@@ -10,7 +10,7 @@ import datetime
 x = (datetime.datetime.today().weekday())
 #Returns the day of the week as an integer, where Monday is 0 and Sunday is 6.
 #Therefore Tuesday is 1 and Thursday is 3
-
+#if else statment modified from https://www.w3schools.com/python/python_conditions.asp
 
 if x == 1: 
   print("Yes - today begins with a T.")  

@@ -1,4 +1,3 @@
-#python sixbutnot12 solution3
 #Write a program that prints all numbers between 1,000 and 10,000 
 # that are divisible by 6 but not 12 
 #Clodagh Murphy 2019 02 10
@@ -11,6 +10,7 @@ for i in range (1000, 10000):
 #Use an if/and statement for i in the above mentioned range
 #when it can be divided by 6 with no remainder
 #and when being divided by 12 leaves a remainder
+#!= is a handy standard comparison operator that means not equal to
 #print the results
     if  (i % 6 == 0) and (i % 12 != 0):
 

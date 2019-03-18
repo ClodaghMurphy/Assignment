@@ -1,6 +1,6 @@
 #Write a program that asks the user to input a positive integer and tells the user 
 # whether or not the number is a prime.
-#Clodagh Murphy 02 03 2019
+#Clodagh Murphy 2019 02 03
 
 #According to https://www.thoughtco.com/how-to-determine-number-is-prime-2312518
 #A prime number is a numeral that is greater than 1 

@@ -1,5 +1,5 @@
 #Write a program that takes a user input string and outputs every second word.
-#Clodagh Murphy 16032019
+#Clodagh Murphy 2019 03 16
 
 #Preparation work using exercises from How to Think Like a Computer Scientist by Allen Downey
 
@@ -68,6 +68,7 @@
 #print (word[-3:]  )      #get the last three char
 #print (word[3:]  )       #get all but the three first char
 #print (word[:-3]  )      #get all but the three last character
+#I can't work out how to get words rather than letters to print.
 
 #phrase = input("Enter a phrase: ")
 #words = phrase.split()  # ['I', 'need', 'practice']
@@ -79,7 +80,31 @@
  #   print (char, end ='')
     #words = phrase.replace(' ', '\n')
 #print(words)
+# NEXT THING TO DO IS str.join
+#s = "Humpty;Dumpty;sat;on;the;wall" 
+#wordlist = s.split( '; ' ) 
+#s = " ".join( wordlist ) 
+#print( s )
+#s = words
+#wordlist = s.split( ' ' ) 
+#s = " ".join( wordlist ) 
+#print( s )
 
+
+#csv = "2016,September,28,Data Processing,Tilburg University" 
+#values = csv.split( ', ' ) 
+#for value in values: print( value )
+#csv = (words[::2]) 
+#values = csv.split( ', ' ) 
+#for value in values: print( value )
+
+#print( s.replace( 'sat on ', 'fell off ' ) )
+#print( words.replace(',', '' )
+#In [4]: print(*l, sep='\n')
+#print ((words[::2]), sep='\n')
+#gun
+#pizza
+# https://www.reddit.com/r/learnpython/comments/6b96j3/beginner_how_to_remove_square_bracket_and/
 
 #Solution adapted from contribution by user Merig
 #https://stackoverflow.com/questions/54857129/
@@ -92,8 +117,6 @@ words = words.split()
 print (words[::2]) #this command outputs words 0,2,4 etc starting fom 0 not 1
 #not every second word as the human eye counts
 #but that is how the example provided for the problem appears so it must be grand
-# NEXT THING TO DO IS str.join
-#In [4]: print(*l, sep='\n')
-#gun
-#pizza
-#https://www.reddit.com/r/learnpython/comments/6b96j3/beginner_how_to_remove_square_bracket_and/
+#I cannot figure out how to format the text to appear without square brackets,commas and parenthesis
+#Enter a phrase: python problem set is a wonderful challenge
+#['python', 'set', 'a', 'challenge']
