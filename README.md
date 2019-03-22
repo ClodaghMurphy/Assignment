@@ -19,9 +19,6 @@ Created by Guido van Rossum and first released in 1991, Python is considered to 
 ## Instructions for downloading this repository
 Log on to github and search for user ClodaghMurphy, the repository is entitled Assignment
 
-## Instructions for running the code displayed in each solution
-
-
 
 ## Project Number 1 Methodology
 Write a program that asks the user to input any positive integer and outputs the sum of all numbers between one and that number.
@@ -198,10 +195,19 @@ I am submitting the code that returns untidy output as it more accurately answer
 
 ## Question 10 Methodology
 Write a program that displays a plot of the functions x, x2 and 2x in the range [0,4].
-I was not sure if I had matplotlib on my machine, I input pip install matplotlib into cmder and got the output that the requirement
+I was not sure if I had matplotlib (Python 2D plotting library) on my machine, I input pip install matplotlib into cmder and got the output that the requirement
 was already satisfied.
 from matplotlib import pyplot as plt, plt is the standard abbreviation for pyplot
-
+Code adapted from one https://stackoverflow.com/questions/54662759/how-to-plot-the-function-y-x2-using-python-program-in-matlpotlib/54915958#54915958
+Create a variable to represent the values in the designated range.
+Use the list function for each of the functions you need to express (x, x2, 2x)
+List function consists of brackets containing an expression followed by a for clause, then zero or more for or if clauses
+a = [x for x in X]
+b = [x**2 for x in X]
+c = [x*2 for x in X]
+Give the axes and the graph as a whole meaningful names
+plt.plot is the command to plot the functions, but they won't appear ("render") unless this command is included
+plt.show()
 
 
 
@@ -223,3 +229,5 @@ https://stackoverflow.com/questions/33324432/collatz-sequence-python-3
 https://stackoverflow.com/questions/17569679/python-attributeerror-io-textiowrapper-object-has-no-attribute-split
 https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 https://stackoverflow.com/questions/54857129/write-a-program-that-takes-a-user-input-string-and-outputs-every-second-word/54857192#54857192
+https://www.pythonforbeginners.com/basics/list-comprehensions-in-python
+https://stackoverflow.com/questions/54662759/how-to-plot-the-function-y-x2-using-python-program-in-matlpotlib/54915958#54915958
