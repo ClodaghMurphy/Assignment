@@ -1,8 +1,7 @@
 #Write a program that displays a plot of the functions x, x2 and 2x in the range [0,4].
 #Clodagh Murphy 17032019
-#I watched these tutorials on Sentdex's channel to research how to plot a graph
-#https://www.youtube.com/watch?v=2-dUHLHeyTY
-#https://www.youtube.com/watch?v=q7Bo_J8x_dw
+#I watched  tutorials on Sentdex's channel to research how to plot a graph
+#https://www.youtube.com/watch?v=aCULcv_IQYw
 
 
 #Matplotlib is a Python 2D plotting library
@@ -33,12 +32,19 @@ c = [x*2 for x in X]
 plt.xlabel ('this is the X axis. Range [0,4]')
 plt.ylabel ('This is the Y axis')
 plt.title ('GRAPH SHOWING PLOT OF FUNCTIONS x, x2 AND 2x IN THE RANGE [0,4]')
-# Create a plot object using the list of integers, and the list 
-# of the integers to the power of 2
-plt.plot(X,a)
-plt.plot(X,b)
-plt.plot(X,c)
+# Create three plot object using the list of integers for each function
+#plt.plot(X,a)
+#plt.plot(X,b)
+#plt.plot(X,c)
+#I want to customise the graph some more with a legend to make the plots meaningful
+#Include keyword argument label
+plt.plot(X,a, label='x')
+plt.plot(X,b, label = 'x2')
+plt.plot(X,c, label = '2x')
+#invoke legend to display that
+plt.legend()
 
-# Render the plot, it won't appear unless this command is included
+# Render the plot, it won't appear unless this command is included!
 plt.show()
+
 

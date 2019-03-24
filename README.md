@@ -231,3 +231,4 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 https://stackoverflow.com/questions/54857129/write-a-program-that-takes-a-user-input-string-and-outputs-every-second-word/54857192#54857192
 https://www.pythonforbeginners.com/basics/list-comprehensions-in-python
 https://stackoverflow.com/questions/54662759/how-to-plot-the-function-y-x2-using-python-program-in-matlpotlib/54915958#54915958
+https://www.youtube.com/watch?v=aCULcv_IQYw
