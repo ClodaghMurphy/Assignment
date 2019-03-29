@@ -200,7 +200,7 @@ The plt.show() command is important in order to render the plot.
 
 
 
-##References
+## References
 The references used also appear in the comments of the individual solutions.<br>
 
 "The Coder’s Apprentice" by Peter Spronck<br>
