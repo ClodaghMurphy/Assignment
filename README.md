@@ -164,7 +164,7 @@ whereas datetime.now() function uses GMT time by default.
 ## Question 9 Methodology
 _Write a program that reads in a text ﬁle and outputs every second line. The program should take the ﬁlename from an argument on the command line._<br>
 
-Using the [python tutorial](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)I adapted the example with open('honeybees.txt','r+') as f:.  It is good practice to use the with keyword when dealing with file objects.<br>
+Using the [python tutorial](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files),I adapted the example with open('honeybees.txt','r+') as f:.  It is good practice to use the with keyword when dealing with file objects.<br>
 The first argument is a string containing the filename<br>
 The second argument is another string containing a few characters describing the way in which the file will be used i.e., r+ opens the file for both reading and writing<br>
 mylist = list(f)<br>
@@ -191,9 +191,12 @@ List function consists of brackets containing an expression followed by a for cl
 a = [x for x in X]<br>
 b = [x**2 for x in X]<br>
 c = [x*2 for x in X]<br>
-Give the axes and the graph as a whole meaningful <br>
-plt.plot is the command to plot the functions, but they won't appear ("render") unless this command is included<br>
-plt.show()<br>
+Next, give the axes and the graph as a whole meaningful/relevant titles. <br>
+plt.xlabel ('this is the X axis. Range [0,4]')<br>
+plt.ylabel ('This is the Y axis')<br>
+plt.title ('GRAPH SHOWING PLOT OF FUNCTIONS x, x2 AND 2x IN THE RANGE [0,4]')<br>
+Insert keyword argument "label" into the plt.plot command which will plot the functions, this ensures a legend explaining the plots will be displayed.
+The plt.show() command is important in order to render the plot.
 
 
 
