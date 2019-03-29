@@ -1,6 +1,7 @@
 ﻿## Project title  
 
-Problem Set 2019 Programming and Scripting Due: last commit on or before March 31st 
+Problem Set 2019 Programming and Scripting<br>
+Due: last commit on or before March 31st.
 
 
 
@@ -28,16 +29,15 @@ _Write a program that asks the user to input any positive integer and outputs th
 I began working on this Problem Set before I was familiar with version control software git.  
 It is the first program I have written and relied on analogue methods while I learned more about coding and the online resources that can assist.  
 Using a pen and paper, I tried to figure out a maths equation that would give me the sum of all numbers. 
-This was to no avail so I started to google then came upon a formula by Gauss, a mathematician in the 18th Century on the website
+This was to no avail so I started to google then came upon a formula n = n * (n + 1) / 2 by Gauss (an 18th Century mathematician) on the website
 [Betterexplained.com](https://betterexplained.com/articles/techniques-for-adding-the-numbers-1-to-100/)
-<br>n = n * (n + 1) / 2 
+<br>
 I wrote the code which would apply this formula to whatever positive integer was input.<br>
 I inserted a while statement intended to reject a number that wasn't a positive integer.<br>
 During testing, it became apparent that a request for a positive whole number would print on the screen, however the formula would
 still run on the number that was originally input.<br>I debugged the code by using the exit() command that simply closes the program if the condition of a positive integer is not met.<br>A line of text instructs the user to run the program again which ensures the results will be based on a positive integer.<br>
-When I tested the program the result was always displayed with as a floating number<br>
-In order to give a result of an integer with no decimal point I have used .format () command which will return a new string, a formatted<br> version of the string for which it is called.<br>
-To interpret an integer as a ﬂoat, place an "f" to the right side of the colon.<br>
+When I tested the program the result was always displayed with as a floating number (that is one with a decimal point)<br>
+In order to give a result of an integer without a radix point I have used .format () command which will return a new formatted version of the string for which it is called.  To interpret an integer as a ﬂoat, place an "f" to the right side of the colon.<br>
 Indicate zero decimals using .0, which will display ﬂoats as integers<br>
 print ("The sum of all numbers between one and your number is {:.0f}".format(x))<br>
 Use of .format method adapted from examples in Chapter 5 Simple Functions<br>
@@ -55,7 +55,7 @@ It is important to bear in mind that counting starts with 0 for Monday.<br>
 The two days of the weeking beginning with T are Tuesday which python assigns the value 1 and Thursday equals 3.<br>
 
 I used an if else statement.<br>
-"if" the datetime.dateime.today().weekday() result was == either day 1 or 3, the text "Yes - today begins with a T" will appear.<br>
+"if" the datetime.dateime.today().weekday() result was == either day 1 or 3, the text "Yes - today begins with a T" will appear.
 "else" is an optional statement that executes if the conditional expression in the if statement above it supplies a FALSE value.<br>
 This sentence prints to the screen "No - today does not begin with a T."<br>
 
@@ -63,14 +63,13 @@ Initially, I put in two lines of if/else statements.<br>
 This gave the correct result but in two lines of output.<br>
 I needed to figure out how to make the code more concise to produce just one line of output.<br>
 I assigned the weekday() value to x in order to make the code more readable.<br>
-On [W3 Schools page](https://www.w3schools.com/python/python_conditions.asp)I found an elegant if else statement with 3 conditions.<br>
+On [W3 Schools page](https://www.w3schools.com/python/python_conditions.asp) I found an elegant if else statement with 3 conditions.<br>
 I modified the statement, ran the program and got the expected answer.<br>
 
 
 ## Question 3 Methodology
 _Write a program that prints all numbers between 1,000 and 10,000 that are divisible by 6 but not 12._ <br>
-I used the built-in range() function that generates arithmetic progressions. I used an if/and statement for i in the above mentioned<br> range, print all results where i can be divided by 6 with no remainder<br>
-and when being divided by 12 leaves a remainder.<br>
+I used the built-in range() function that generates arithmetic progressions. I used an if/and statement for i in the above mentioned range, print all results where i can be divided by 6 with no remainder and when being divided by 12 leaves a remainder.<br>
 != is a handy standard comparison operator that means not equal to<br>
 f  (i % 6 == 0) and (i % 12 != 0): print (i)<br>
 In order to test my result I started with a range (1000, 1100) and manually checked every output.  <br>
@@ -82,7 +81,7 @@ _Write a program that asks the user to input any positive integer and outputs th
 The instructions provided above refer to the collatz conjecture, this is
 an unsolved mathematical problem at time of writing.<br>
 No matter what number selected, the final result will always be one.<br>
-This code can be used to test the theory and if you get a result other than one#I'd be happy to take a cut of the $500 reward :stuck_out_tongue: <br>
+This code can be used to test the theory and if you get a result other than one I'd be happy to take a cut of the $500 reward :stuck_out_tongue: <br>
 
 Firstly ask the user to input a positive integer i.e. a whole number.<br>
 Tell the user it must be a positive integer if it is not one<br>
@@ -106,7 +105,7 @@ Then exclude numbers less than or equal to 1 from being input at the outset beca
 Code adapted from [Programiz website](https://www.programiz.com/python-programming/examples/prime-number)<br>
 Use if/else loop to check for factors of x by iteration.  <br>
 The equation x % 1== 0 determines whether the number can be divided by any other number in the range between 2 and itself.<br>
-Use break statement to terminate the loop once all the numbers in the range have been exhausted to tell the user that the number is a <br>prime i.e., it could only be divided by itself.<br>
+Use break statement to terminate the loop once all the numbers in the range have been exhausted to tell the user that the number is a prime i.e., it could only be divided by itself.<br>
  
 ## Question 6 Methodology
 
@@ -121,7 +120,7 @@ the [::2] slice syntax will return items from the array going up by two<br>
 print (words[::2]) #this command outputs words 0,2,4 etc starting fom 0 not 1<br>
 not every second word as the human eye counts<br>
 but that is how the example provided for the problem appears so it must be grand<br>
-I cannot figure out how to format the text to print without square brackets,commas and parenthesis<br>
+I cannot figure out how to format the text to print without square brackets, commas and parenthesis!<br>
 Enter a phrase: python problem set is a wonderful challenge<br>
 ['python', 'set', 'a', 'challenge']<br>
 
@@ -130,11 +129,10 @@ Enter a phrase: python problem set is a wonderful challenge<br>
 
 _Write a program that that takes a positive ﬂoating point number as input and outputs an approximation of its square root._ <br>
 I used the import statement to import a specific function from the math module. <br> 
-According to "The Coder’s Apprentice" by Peter Spronck, it is possible to rename a function that you import from a module, using the<br>
+According to "The Coder’s Apprentice" by Peter Spronck, it is possible to rename a function that you import from a module, using the
 keyword as. This is helpful if using several modules that contain functions with similar names.<br>
 I have included this renaming function to make my code easier to read for a beginner: squareroot not sqrt!<br>
-As all data stored from the input command is stored as a string variable, <br>
-Use the conversion process known as TypeCasting<br>
+As all data stored from the input command is stored as a string variable use the conversion process known as TypeCasting<br>
 float() type casting will return the value between the parentheses as a floating-point number<br>
 even though it was not input as one.<br>
 I used the format() function to round down the decimals to one, it took a lot of experimentation with syntax in order to get the correct result.<br>
@@ -152,8 +150,7 @@ Using imported time module, the following directives to indicate the particular 
 %I:%M  Hour:Minute (12-hour clock) as a zero-padded decimal number.<br>
 %p Locale’s equivalent of either AM or PM.<br>
 print(datetime.datetime.now().strftime("%A, %B %d %Y at %I:%M %p"))<br>
-Above code produces result in following format<br>
-"Sunday, March 10 2019 at 09:29 AM"<br>
+Above code produces result in following format: "Sunday, March 10 2019 at 09:29 AM"<br>
 
 The solution requires English ordinal suffix for the day of the month i.e. 10th and this is not a functionality of python. <br>
 I adapted a piece of brilliant code to create a function called custom_strftime that provides a suffix by user gsteff from [stackoverflow website](https://stackoverflow.com/questions/5891555/display-the-date-like-may-5th-using-pythons-strftime/5891658#5891658)<br>
@@ -167,9 +164,7 @@ whereas datetime.now() function uses GMT time by default.
 ## Question 9 Methodology
 _Write a program that reads in a text ﬁle and outputs every second line. The program should take the ﬁlename from an argument on the command line._<br>
 
-From the [python tutorial](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)<br>
-i adapted this code  with open('honeybees.txt','r+') as f:<br>
-It is good practice to use the with keyword when dealing with file objects.<br>
+Using the [python tutorial](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)I adapted the example with open('honeybees.txt','r+') as f:.  It is good practice to use the with keyword when dealing with file objects.<br>
 The first argument is a string containing the filename<br>
 The second argument is another string containing a few characters describing the way in which the file will be used i.e., r+ opens the file for both reading and writing<br>
 mylist = list(f)<br>
@@ -177,19 +172,19 @@ As advised by user Martijn Pieters on [stackoverflow](https://stackoverflow.com/
 I used the [::2] slice syntax to return items from the array going up in increments of two.<br>
 The output is printed with new line characters \r\n, that is not how i want the text to appear.<br>
 I tried using thecsv module, even though it is a text file, csv reader can remove delimiters and return file contents as a list of strings.<br>
-The output is neat but I unable to code correctly output only every second line.<br>
+The output is neat but I am unable to code correctly so that it returns every second line as per the instruction.<br>
 import csv<br>
 with open('honeybees.txt', newline='') as csvfile:<br>
     spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')<br>
     for row in spamreader:<br>
             print(' '.join(row))<br>
-I am submitting the code that returns untidy output as it more accurately answers the problem.
+I am submitting the code that returns untidy output because it more accurately answers the problem.
 
 ## Question 10 Methodology
 _Write a program that displays a plot of the functions x, x2 and 2x in the range [0,4]._<br>
 I was not sure if I had matplotlib (Python 2D plotting library) on my machine, I input pip install matplotlib into cmder and got the output that the requirement was already satisfied.<br>
 from matplotlib import pyplot as plt, plt is the standard abbreviation for pyplot<br>
-Code adapted from one at [stackoverflow](https://stackoverflow.com/questions/54662759/how-to-plot-the-function-y-x2-using-python-program-in-matlpotlib/54915958#54915958)<br>
+Code adapted from one by Tacratis at [stackoverflow](https://stackoverflow.com/questions/54662759/how-to-plot-the-function-y-x2-using-python-program-in-matlpotlib/54915958#54915958)<br>
 Create a variable to represent the values in the designated range.<br>
 Use the list function for each of the functions you need to express (x, x2, 2x)<br>
 List function consists of brackets containing an expression followed by a for clause, then zero or more for or if clauses<br>
