@@ -55,7 +55,7 @@ It is important to bear in mind that counting starts with 0 for Monday.<br>
 The two days of the weeking beginning with T are Tuesday which python assigns the value 1 and Thursday equals 3.<br>
 
 I used an if else statement.<br>
-"if" the datetime.dateime.today().weekday() result was == either day 1 or 3, the text "Yes - today begins with a T" will appear.
+"if" the datetime.datetime.today().weekday() result was == either day 1 or 3, the text "Yes - today begins with a T" will appear.
 "else" is an optional statement that executes if the conditional expression in the if statement above it supplies a FALSE value.<br>
 This sentence prints to the screen "No - today does not begin with a T."<br>
 
@@ -201,7 +201,7 @@ The plt.show() command is important in order to render the plot.
 
 
 ##References
-The references used also appear as hyperlinks in the comments of the individual solutions.<br>
+The references used also appear in the comments of the individual solutions.<br>
 
 "The Coder’s Apprentice" by Peter Spronck<br>
 "How to Think Like a Computer Scientist" by Allen Downey<br>
