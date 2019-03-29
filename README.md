@@ -15,6 +15,8 @@ The project represents 50% of the marks due for Programming and Scripting Module
 
 The coding is written in Python, which according to DM's i-Tech Special | Coding for Beginners Volume 29 is
 >"the greatest computer programming language ever created".  
+>
+<br>
 Created by Guido van Rossum and first released in 1991, Python is considered to be an accessible language for new programmers (like me) to learn because the syntax (the form of language the program must receive to compute) is simple and consistent.
 
 ## Instructions for downloading this repository
@@ -26,15 +28,13 @@ _Write a program that asks the user to input any positive integer and outputs th
 I began working on this Problem Set before I was familiar with version control software git.  
 It is the first program I have written and relied on analogue methods while I learned more about coding and the online resources that can assist.  
 Using a pen and paper, I tried to figure out a maths equation that would give me the sum of all numbers. 
-This was to no avail so I started to google then came upon a formula by Gauss, a mathematician in the 18th Century.
+This was to no avail so I started to google then came upon a formula by Gauss, a mathematician in the 18th Century on the website
 [Betterexplained.com](https://betterexplained.com/articles/techniques-for-adding-the-numbers-1-to-100/)
 <br>n = n * (n + 1) / 2 
 I wrote the code which would apply this formula to whatever positive integer was input.<br>
 I inserted a while statement intended to reject a number that wasn't a positive integer.<br>
-During testing, it became apparent that a request for a positive whole number would print on the screen, however the formula would <br>
-still run on the number that was originally input.<br>
-I debugged the code by using the exit() command that simply closes the program if the condition of a positive integer is not met.<br>
-A line of text instructs the user to run the program again which ensures the results will be based on a positive integer.<br>
+During testing, it became apparent that a request for a positive whole number would print on the screen, however the formula would
+still run on the number that was originally input.<br>I debugged the code by using the exit() command that simply closes the program if the condition of a positive integer is not met.<br>A line of text instructs the user to run the program again which ensures the results will be based on a positive integer.<br>
 When I tested the program the result was always displayed with as a floating number<br>
 In order to give a result of an integer with no decimal point I have used .format () command which will return a new string, a formatted<br> version of the string for which it is called.<br>
 To interpret an integer as a ﬂoat, place an "f" to the right side of the colon.<br>
@@ -63,8 +63,7 @@ Initially, I put in two lines of if/else statements.<br>
 This gave the correct result but in two lines of output.<br>
 I needed to figure out how to make the code more concise to produce just one line of output.<br>
 I assigned the weekday() value to x in order to make the code more readable.<br>
-On W3 Schools page I found an elegant if else statement with 3 conditions.<br>
-https://www.w3schools.com/python/python_conditions.asp<br>
+On [W3 Schools page](https://www.w3schools.com/python/python_conditions.asp)I found an elegant if else statement with 3 conditions.<br>
 I modified the statement, ran the program and got the expected answer.<br>
 
 
@@ -90,8 +89,7 @@ Tell the user it must be a positive integer if it is not one<br>
 Use the exit() method to stop the program running. <br>
 It is the most reliable, cross-platform way of stopping code execution<br>
 
-I have used the collatz function verbatim from user R2DPoop<br>
-https://stackoverflow.com/questions/33324432/collatz-sequence-python-3
+I have used the collatz function verbatim from user R2DPoop on [stackoverflow](https://stackoverflow.com/questions/33324432/collatz-sequence-python-3#)<br>
 != means not equal to, therefore when i is equal to 1 the loop won't happen<br>
 There is no need to write code for both conditions i%2==0 and i%2==1 <br>
 If one is true, the other is automatically false<br>
@@ -105,7 +103,7 @@ _Write a program that asks the user to input a positive integer and tells the us
 A prime number is greater than 1 and cannot be divided evenly by any other number except 1 and itself.<br>
 Firstly ask the user to input a positive integer i.e. a whole number.<br>
 Then exclude numbers less than or equal to 1 from being input at the outset because 1 is not prime and negative numbers cannot be.<br>   Use the exit() method to stop the program running. <br>
-Code adapted from https://www.programiz.com/python-programming/examples/prime-number<br>
+Code adapted from [Programiz website](https://www.programiz.com/python-programming/examples/prime-number)<br>
 Use if/else loop to check for factors of x by iteration.  <br>
 The equation x % 1== 0 determines whether the number can be divided by any other number in the range between 2 and itself.<br>
 Use break statement to terminate the loop once all the numbers in the range have been exhausted to tell the user that the number is a <br>prime i.e., it could only be divided by itself.<br>
@@ -114,9 +112,7 @@ Use break statement to terminate the loop once all the numbers in the range have
 
 _Write a program that takes a user input string and outputs every second word._<br>
 
-Solution adapted from contribution by user Merig
-https://stackoverflow.com/questions/54857129/<br>
-write-a-program-that-takes-a-user-input-string-and-outputs-every-second-word/54857192#54857192<br>
+Solution adapted from contribution by user Merig on [stackoverflow](https://stackoverflow.com/questions/54857129/write-a-program-that-takes-a-user-input-string-and-outputs-every-second-word/54857192#54857192)<br>
 words = input("Enter a phrase: ")<br>
 All data from the input command is stored as a string variable.<br>
 Use the split method to break a string into words<br>
@@ -160,8 +156,7 @@ Above code produces result in following format<br>
 "Sunday, March 10 2019 at 09:29 AM"<br>
 
 The solution requires English ordinal suffix for the day of the month i.e. 10th and this is not a functionality of python. <br>
-I adapted a piece of brillian code to create a function called custom_strftime that provides a suffix by user gsteff from stackoverflow<br>
-https://stackoverflow.com/questions/5891555/display-the-date-like-may-5th-using-pythons-strftime/5891658#5891658<br>
+I adapted a piece of brilliant code to create a function called custom_strftime that provides a suffix by user gsteff from [stackoverflow website](https://stackoverflow.com/questions/5891555/display-the-date-like-may-5th-using-pythons-strftime/5891658#5891658)<br>
 Day endings are usually "th", this code provides alternative endings on specified days.<br>
 It uses the time module which provides various time-related functions.<br>
 there is no requirement to import datetime module<br>
@@ -172,15 +167,13 @@ whereas datetime.now() function uses GMT time by default.
 ## Question 9 Methodology
 _Write a program that reads in a text ﬁle and outputs every second line. The program should take the ﬁlename from an argument on the command line._<br>
 
-From the python tutorial 
-https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files<br>
+From the [python tutorial](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)<br>
 i adapted this code  with open('honeybees.txt','r+') as f:<br>
 It is good practice to use the with keyword when dealing with file objects.<br>
 The first argument is a string containing the filename<br>
 The second argument is another string containing a few characters describing the way in which the file will be used i.e., r+ opens the file for both reading and writing<br>
 mylist = list(f)<br>
-As advised by user Martijn Pieters, the file can be read as a list of lines by calling list() on the file object<br>
-https://stackoverflow.com/questions/17569679/python-attributeerror-io-textiowrapper-object-has-no-attribute-split  <br>
+As advised by user Martijn Pieters on [stackoverflow](https://stackoverflow.com/questions/17569679/python-attributeerror-io-textiowrapper-object-has-no-attribute-split), the file can be read as a list of lines by calling list() on the file object<br>
 I used the [::2] slice syntax to return items from the array going up in increments of two.<br>
 The output is printed with new line characters \r\n, that is not how i want the text to appear.<br>
 I tried using thecsv module, even though it is a text file, csv reader can remove delimiters and return file contents as a list of strings.<br>
@@ -196,7 +189,7 @@ I am submitting the code that returns untidy output as it more accurately answer
 _Write a program that displays a plot of the functions x, x2 and 2x in the range [0,4]._<br>
 I was not sure if I had matplotlib (Python 2D plotting library) on my machine, I input pip install matplotlib into cmder and got the output that the requirement was already satisfied.<br>
 from matplotlib import pyplot as plt, plt is the standard abbreviation for pyplot<br>
-Code adapted from one https://stackoverflow.com/questions/54662759/how-to-plot-the-function-y-x2-using-python-program-in-matlpotlib/54915958#54915958<br>
+Code adapted from one at [stackoverflow](https://stackoverflow.com/questions/54662759/how-to-plot-the-function-y-x2-using-python-program-in-matlpotlib/54915958#54915958)<br>
 Create a variable to represent the values in the designated range.<br>
 Use the list function for each of the functions you need to express (x, x2, 2x)<br>
 List function consists of brackets containing an expression followed by a for clause, then zero or more for or if clauses<br>
